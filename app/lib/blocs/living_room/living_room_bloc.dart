@@ -34,8 +34,8 @@ class LivingRoomBloc extends Bloc<LivingRoomEvents, LivingRoomState> {
       yield LivingRoomInitState();
     } else if (event is LivingRoomEventStated) {
       yield LivingRoomLoadingState();
-    //  var data = await apiRepository.getSensors(begin,end);
-      var data = await apiRepository.getSensors('1645370760000','1645457160000');
+     var data = await apiRepository.getSensors(begin,end);
+      //var data = await apiRepository.getSensors('1645542750000','1645546350000');
       if (data != null) {
           yield LivingRoomLoadedState(sensorsResponse: data);
 

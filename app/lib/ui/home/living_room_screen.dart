@@ -493,69 +493,6 @@ class _BodyState extends State<Body> {
                       decoration: BoxDecoration(
                         color: Colors.lightBlue.shade50.withOpacity(0.5),
                         border:
-                        Border.all(color: Colors.blueAccent, width: 1.2),
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Row(
-                            children: [
-                              Image.asset(
-                                "assets/images/living-room.png",
-                                width: 36,
-                              ),
-                              Text(
-                                ' Đèn nền ',
-                                style: TextStyle(
-                                    fontWeight: FontWeight.bold, fontSize: 18),
-                              ),
-                            ],
-                          ),
-                          // Row(
-                          //   children: [
-                          //     const Text(
-                          //       'Auto',
-                          //       style: TextStyle(
-                          //           fontWeight: FontWeight.bold, fontSize: 18),
-                          //     ),
-                          //     Transform.scale(
-                          //         scale: 1,
-                          //         child: Switch(
-                          //           onChanged: toggleAuto,
-                          //           value: auto,
-                          //         )),
-                          //   ],
-                          // ),
-                          auto?
-                          Transform.scale(
-                              scale: 1,
-                              child: Switch(
-                                onChanged:  null,
-                                value: led2,
-                              )):
-                          Transform.scale(
-                              scale: 1,
-                              child: Switch(
-                                onChanged:  toggleSwitchLed2,
-                                value: led2,
-                                activeColor: Colors.blue,
-                                activeTrackColor: Colors.yellow,
-                                inactiveThumbColor: Colors.redAccent,
-                                inactiveTrackColor: Colors.orange,
-                              ))
-                        ],
-                      ),
-                    ),
-                    Container(
-                      padding: const EdgeInsets.fromLTRB(10, 0, 20, 5),
-                      margin: const EdgeInsets.fromLTRB(0, 6, 0, 0),
-                      width: size.width,
-                      height: size.height * 0.08,
-                      alignment: Alignment.center,
-                      decoration: BoxDecoration(
-                        color: Colors.lightBlue.shade50.withOpacity(0.5),
-                        border:
                             Border.all(color: Colors.blueAccent, width: 1.2),
                         borderRadius: BorderRadius.circular(10),
                       ),
@@ -597,7 +534,7 @@ class _BodyState extends State<Body> {
                       decoration: BoxDecoration(
                         color: Colors.lightBlue.shade50.withOpacity(0.5),
                         border:
-                            Border.all(color: Colors.blueAccent, width: 1.2),
+                        Border.all(color: Colors.blueAccent, width: 1.2),
                         borderRadius: BorderRadius.circular(10),
                       ),
                       child: Row(
@@ -610,25 +547,88 @@ class _BodyState extends State<Body> {
                                 width: 36,
                               ),
                               Text(
-                                ' Khóa Cửa ',
+                                ' Đèn cảnh báo',
                                 style: TextStyle(
                                     fontWeight: FontWeight.bold, fontSize: 18),
                               ),
                             ],
                           ),
+                          // Row(
+                          //   children: [
+                          //     const Text(
+                          //       'Auto',
+                          //       style: TextStyle(
+                          //           fontWeight: FontWeight.bold, fontSize: 18),
+                          //     ),
+                          //     Transform.scale(
+                          //         scale: 1,
+                          //         child: Switch(
+                          //           onChanged: toggleAuto,
+                          //           value: auto,
+                          //         )),
+                          //   ],
+                          // ),
+                          auto?
                           Transform.scale(
                               scale: 1,
                               child: Switch(
-                                onChanged: toggleSwitchTivi,
-                                value: tivi,
+                                onChanged:  null,
+                                value: led2,
+                              )):
+                          Transform.scale(
+                              scale: 1,
+                              child: Switch(
+                                onChanged:  toggleSwitchLed2,
+                                value: led2,
                                 activeColor: Colors.blue,
                                 activeTrackColor: Colors.yellow,
                                 inactiveThumbColor: Colors.redAccent,
                                 inactiveTrackColor: Colors.orange,
-                              )),
+                              ))
                         ],
                       ),
                     ),
+                    // Container(
+                    //   padding: const EdgeInsets.fromLTRB(10, 0, 20, 5),
+                    //   margin: const EdgeInsets.fromLTRB(0, 6, 0, 0),
+                    //   width: size.width,
+                    //   height: size.height * 0.08,
+                    //   alignment: Alignment.center,
+                    //   decoration: BoxDecoration(
+                    //     color: Colors.lightBlue.shade50.withOpacity(0.5),
+                    //     border:
+                    //         Border.all(color: Colors.blueAccent, width: 1.2),
+                    //     borderRadius: BorderRadius.circular(10),
+                    //   ),
+                    //   child: Row(
+                    //     mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    //     children: [
+                    //       Row(
+                    //         children: [
+                    //           Image.asset(
+                    //             "assets/images/living-room.png",
+                    //             width: 36,
+                    //           ),
+                    //           Text(
+                    //             ' Khóa Cửa ',
+                    //             style: TextStyle(
+                    //                 fontWeight: FontWeight.bold, fontSize: 18),
+                    //           ),
+                    //         ],
+                    //       ),
+                    //       Transform.scale(
+                    //           scale: 1,
+                    //           child: Switch(
+                    //             onChanged: toggleSwitchTivi,
+                    //             value: tivi,
+                    //             activeColor: Colors.blue,
+                    //             activeTrackColor: Colors.yellow,
+                    //             inactiveThumbColor: Colors.redAccent,
+                    //             inactiveTrackColor: Colors.orange,
+                    //           )),
+                    //     ],
+                    //   ),
+                    // ),
                   ],
                 ),
               ),

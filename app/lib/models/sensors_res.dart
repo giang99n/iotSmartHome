@@ -38,7 +38,7 @@ class Result {
   factory Result.fromJson(Map<String, dynamic> json) => Result(
     humidityAir: json["humidityAir"].toDouble(),
     temperature: json["temperature"].toDouble(),
-    time: json["time"],
+    time: json["time"].toInt(),
   );
 
   Map<String, dynamic> toJson() => {
